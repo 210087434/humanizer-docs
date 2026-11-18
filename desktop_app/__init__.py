@@ -1,0 +1,2 @@
+"""Humanize Helper desktop package."""
+

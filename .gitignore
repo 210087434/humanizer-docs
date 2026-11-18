@@ -1,0 +1,18 @@
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Per-user bridge configuration contains a private authentication token.
+/desktop_app/config.json
+/browser_extension/config.js
+
+# Local build products (the distributable setup wizard is intentionally kept).
+/SetupWizard/build/
+/desktop_app/HumanizeHelper.exe
+/desktop_app/word_com_helper.exe
+/HumanizeHelper.exe
+
+# Existing screenshots contain private research text and account details.
+/human.png
+/image.png
+/image copy.png

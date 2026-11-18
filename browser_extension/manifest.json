@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Humanize Helper Bridge",
+  "version": "1.0.3",
+  "description": "Background bridge between Microsoft Word (Humanize Helper desktop app) and Clever AI Humanizer.",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "alarms",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://cleverhumanizer.ai/*",
+    "http://127.0.0.1/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://cleverhumanizer.ai/*"
+      ],
+      "js": [
+        "config.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
